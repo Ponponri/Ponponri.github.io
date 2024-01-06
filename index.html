@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行檢查清單</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<h2>旅行檢查清單</h2>
+
+<table>
+    <tr>
+        <th>種類</th>
+        <th>物品</th>
+        <th>數量</th>
+        <th>備註</th>
+        <th>完成</th>
+    </tr>
+    <tr>
+        <td>隨身衣物</td>
+        <td>上衣</td>
+        <td>5</td>
+        <td></td>
+        <td><input type="checkbox" id="item1"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>內衣</td>
+        <td>10?</td>
+        <td></td>
+        <td><input type="checkbox" id="item2"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>內褲</td>
+        <td>15</td>
+        <td></td>
+        <td><input type="checkbox" id="item3"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>褲子</td>
+        <td>5</td>
+        <td></td>
+        <td><input type="checkbox" id="item4"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>鞋子</td>
+        <td>2雙</td>
+        <td>防水注意</td>
+        <td><input type="checkbox" id="item5"></td>
+    </tr>
+    <tr>
+        <td>睡衣</td>
+        <td>睡衣上衣</td>
+        <td>2-3件</td>
+        <td></td>
+        <td><input type="checkbox" id="item6"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>睡衣褲子</td>
+        <td>2件</td>
+        <td></td>
+        <td><input type="checkbox" id="item7"></td>
+    </tr>
+    <tr>
+        <td>其他防寒衣物</td>
+        <td>厚外套</td>
+        <td>1-2套</td>
+        <td>需防寒</td>
+        <td><input type="checkbox" id="item8"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>防寒手套</td>
+        <td>1雙</td>
+        <td></td>
+        <td><input type="checkbox" id="item9"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>耳罩</td>
+        <td>#</td>
+        <td>要不要帶看個人</td>
+        <td><input type="checkbox" id="item10"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>圍巾</td>
+        <td>1個</td>
+        <td></td>
+        <td><input type="checkbox" id="item11"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>帽子</td>
+        <td>#</td>
+        <td>要不要帶看個人</td>
+        <td><input type="checkbox" id="item12"></td>
+    </tr>
+    <tr>
+        <td>盥洗用具</td>
+        <td>牙刷、牙膏</td>
+        <td>1組</td>
+        <td></td>
+        <td><input type="checkbox" id="item13"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>毛巾</td>
+        <td>1-2條</td>
+        <td></td>
+        <td><input type="checkbox" id="item14"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>衛生紙</td>
+        <td>#</td>
+        <td>看個人狀況</td>
+        <td><input type="checkbox" id="item15"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>刮鬍刀</td>
+        <td>1個</td>
+        <td>X</td>
+        <td><input type="checkbox" id="item16"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>酒精</td>
+        <td>1小瓶</td>
+        <td></td>
+        <td><input type="checkbox" id="item17"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>香香噴霧</td>
+        <td>1人1瓶</td>
+        <td>不洗衣物時用</td>
+        <td><input type="checkbox" id="item18"></td>
+    </tr>
+    <tr>
+        <td>乳液、個人藥品</td>
+        <td>#</td>
+        <td>看個人狀況</td>
+        <td></td>
+        <td><input type="checkbox" id="item19"></td>
+    </tr>
+    <tr>
+        <td>其他行李配備</td>
+        <td>行李箱</td>
+        <td>1個</td>
+        <td>需有1個行李秤</td>
+        <td><input type="checkbox" id="item20"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>行李鎖/綁帶</td>
+        <td></td>
+        <td></td>
+        <td><input type="checkbox" id="item21"></td>
+    </tr>
+    <tr>
+        <td>個人隨身包包</td>
+        <td>1個</td>
+        <td></td>
+        <td></td>
+        <td><input type="checkbox" id="item22"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>雨傘</td>
+        <td>1個</td>
+        <td></td>
+        <td><input type="checkbox" id="item23"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>手機、充電設備</td>
+        <td>1組</td>
+        <td></td>
+        <td><input type="checkbox" id="item24"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>網卡</td>
+        <td>每人1份</td>
+        <td>要帶網卡針</td>
+        <td><input type="checkbox" id="item25"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>水壺</td>
+        <td>1個</td>
+        <td></td>
+        <td><input type="checkbox" id="item26"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>紙、筆</td>
+        <td>#</td>
+        <td></td>
+        <td><input type="checkbox" id="item27"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>口罩</td>
+        <td>#</td>
+        <td></td>
+        <td><input type="checkbox" id="item28"></td>
+    </tr>
+    <tr>
+        <td><strong>重要物品</strong></td>
+        <td>護照</td>
+        <td>1人1個</td>
+        <td></td>
+        <td><input type="checkbox" id="item29"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>護照影本</td>
+        <td></td>
+        <td></td>
+        <td><input type="checkbox" id="item30"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>機票</td>
+        <td>1人1張</td>
+        <td></td>
+        <td><input type="checkbox" id="item31"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>住宿證明</td>
+        <td>#</td>
+        <td>電子 + 紙本都帶</td>
+        <td><input type="checkbox" id="item32"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>錢</td>
+        <td>日幣 + 一點台幣</td>
+        <td>看沒有人要帶信用卡以防萬一</td>
+        <td><input type="checkbox" id="item33"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>信用卡、金融卡</td>
+        <td>#</td>
+        <td>1-2人帶</td>
+        <td><input type="checkbox" id="item34"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>兵役證明</td>
+        <td>免役</td>
+        <td>中景 (役男出境)</td>
+        <td><input type="checkbox" id="item35"></td>
+    </tr>
+</table>
+
+</body>
+</html>
